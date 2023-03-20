@@ -24,6 +24,7 @@ class DcpServer
 {
 public:
   DcpServer();
+  ~DcpServer();
 
   int execute(serviceOptions_t& options);
   
@@ -33,6 +34,8 @@ private:
   void executeService();
   void shutdownService();
   void onBackgroundInterval();
+
+  bool enabled_ = false;
 };
 
 } // namespace dcpservice

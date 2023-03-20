@@ -136,5 +136,11 @@ bool allowRun()
 
 int runService(serviceOptions_t& options)
 {
-  printf("hello\n");
+  DcpServer server;
+  int result;
+
+  // run
+  result = server.execute(options);
+
+  return result;
 }

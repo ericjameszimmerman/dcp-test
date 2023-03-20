@@ -13,6 +13,7 @@ add_custom_target(test-output-directory ALL
 # add the executable
 add_executable(dcptest 
                src/dcpd.cpp
+               src/dcpServer.cpp
                src/common/pf_dcp.c
                src/common/pf_scheduler.c
                src/common/pf_eth.c
